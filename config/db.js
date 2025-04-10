@@ -2,7 +2,7 @@
 const mysql = require('mysql2');
 
 // Define the connection URL
-const connectionUrl = 'mysql://root:wgSICUlEKEkDPbfwlywgNDgfbRhYcVXQ@tramway.proxy.rlwy.net:24813/railway'; // Replace with your actual credentials
+const connectionUrl = process.env.CONNECTION_URL; // Replace with your actual credentials
 
 // Create a connection using the URL
 const connection = mysql.createConnection(connectionUrl);

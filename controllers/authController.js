@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
 
-const SECRET = 'mysecretkey'; // use env in production
+const SECRET =  process.env.SECRET; // use env in production
 
 exports.signup = (req, res) => {
   const { name, email, password } = req.body;
