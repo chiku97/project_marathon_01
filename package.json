@@ -2,13 +2,18 @@
   "name": "backend-project",
   "version": "1.0.0",
   "description": "A simple backend project with a login route.",
-  "main": "api/login.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node api/login.js"
+    "start": "nodemon index.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "body-parser": "^1.20.2"
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.0",
+    "nodemon": "^3.1.9"
   },
   "engines": {
     "node": ">=14.x"
